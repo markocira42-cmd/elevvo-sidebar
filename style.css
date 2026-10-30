@@ -34,27 +34,57 @@ body{
 /* SIDEBAR-HEADER */
 
 .sidebar-header{
-
-}
-
-/* SIDEBAR-LINKS */
-
-.sidebar-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
     
-}
-
-#sidebar li{
-    list-style: none;
-}
-
-#sidebar a{
-    text-decoration: none;
-    color: #f4f4f4;
 }
 
 .highlight{
     color:gold;
 }
+
+#sidebar-toggle{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#sidebar-toggle:hover{
+    background-color: #161621;
+}
+
+
+/* SIDEBAR-LINKS */
+
+.sidebar-links{}
+
+.sidebar-links li{
+    list-style: none;
+    margin-bottom: 13px;
+}
+
+.sidebar-links a{
+    text-decoration: none;
+    color: #a0a05b;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.sidebar-links a:hover{
+    color: white;
+    background-color: #161621;
+    border-radius: 10px;
+}
+
 
 
 
