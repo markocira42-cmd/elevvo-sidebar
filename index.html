@@ -11,10 +11,42 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <button id="sidebar-toggle">
-        <i class="fas fa-bars icon"></i>
-    </button>
-    <nav></nav>
+    <nav id="sidebar" class="open">
+
+        <section class="sidebar-header">
+            <h1 id="logo"><span class="highlight">My</span> Brand</h1>
+            <button id="sidebar-toggle">
+                <i class="fas fa-bars icon"></i>
+            </button>
+        </section>
+        <section class="sidebar-links">
+            <ul>
+                <li>
+                    <a href="#" target="_self">
+                        <i class="fas fa-home icon"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_self">
+                        <i class="fas fa-user icon"></i> Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_self">
+                        <i class="fas fa-gear icon"></i> Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_self">
+                        <i class="fas fa-envelope icon"></i> Messages
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </nav>
+
     <main></main>
+
 </body>
 </html>
