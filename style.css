@@ -25,12 +25,19 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    box-shadow: 0 1px 5px #333;
 }
 
  header .sidebar-button{
     position: fixed;
     top: 8px;
     left: 8px;
+}
+
+/* LOGO */
+
+.logo .highlight{
+    color:gold;
 }
 
 /* SIDEBAR-BUTTON */
@@ -48,6 +55,7 @@ header{
 .sidebar-button:hover{
     background-color: #161621;
 }
+
 
 /* SIDEBAR */
 
@@ -78,9 +86,6 @@ header{
     
 }
 
-.highlight{
-    color:gold;
-}
 
 
 
