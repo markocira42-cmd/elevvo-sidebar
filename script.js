@@ -1,4 +1,3 @@
-const header = document.querySelector('header');
 const sideBar = document.querySelector('#sidebar');
 const sidebarToggleOpen = document.querySelector(
   '#sidebar-toggle-open'
@@ -6,28 +5,29 @@ const sidebarToggleOpen = document.querySelector(
 const sidebarToggleClose = document.querySelector(
   '#sidebar-toggle-close'
 );
-const main = document.querySelector('main');
 
-const toggleSideBar = () => {
-  sidebarToggleOpen.addEventListener('click', (event) => {
-    event.stopPropagation();
-    sideBar.classList.toggle('open');
-  });
-
-  sidebarToggleClose.addEventListener('click', (event) => {
-    event.stopPropagation();
-    sideBar.classList.toggle('open');
-  });
-
-  header.addEventListener('click', (e) => {
-    e.stopImmediatePropagation();
-    sideBar.classList.remove('open');
-  });
-
-  main.addEventListener('click', (e) => {
-    e.stopImmediatePropagation();
-    sideBar.classList.remove('open');
-  });
+const toggleSidebar = () => {
+  sideBar.classList.toggle('open');
 };
 
-toggleSideBar();
+const closeSidebar = () => {
+  sideBar.classList.remove('open');
+};
+
+sidebarToggleOpen.addEventListener('click', (event) => {
+  event.stopPropagation();
+  toggleSidebar();
+});
+
+sidebarToggleClose.addEventListener('click', (event) => {
+  closeSidebar();
+});
+
+document.addEventListener('click', (event) => {
+  if (
+    sideBar.classList.contains('open') &&
+    !sideBar.contains(event.target)
+  ) {
+    closeSidebar();
+  }
+});
