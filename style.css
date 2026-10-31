@@ -131,21 +131,24 @@ main h1{
 
 @media(min-width: 768px){
     /* FOR DESKTOP */
-
+    
     header{
         min-height: 65px;
+        width: calc(100% - 250px);
+        margin-left: 250px;
     }
-
-    header .sidebar-button{
-        top: 13px;
-        left: 10px;
-    }
-
+    
     .sidebar-button{
-        font-size: 30px;
+        display: none;
     }
-
+    
+    #sidebar{
+        transform: translateX(0);
+    }
+    
     main{
-        width: 80%;
+        width: calc(100% - 250px);
+        margin-left: 250px;
+        margin-top: 90px;
     }
 }
