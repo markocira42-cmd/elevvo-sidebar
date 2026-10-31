@@ -21,10 +21,10 @@ https://markocira42-cmd.github.io/elevvo-sidebar/
 ## Screenshots
 
 ### Desktop View
-![Desktop View](./screenshots/desktop.png)
+![Desktop View](./screenshots/desktop-view.png)
 
 ### Mobile View (Closed)
-![Mobile View Closed](./screenshots/mobile-closed.png)
+![Mobile View Closed](./screenshots/mobile-view-closed.png)
 
 ### Mobile View (Open)
-![Mobile View Open](./screenshots/mobile-open.png)
+![Mobile View Open](./screenshots/mobile-view-open.png)
