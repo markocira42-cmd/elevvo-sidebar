@@ -7,7 +7,6 @@ A fully responsive, mobile-first collapsible sidebar built from scratch using HT
 - **Click-outside-to-close** logic using DOM event delegation.
 - Unique hamburger menu (open) and X mark (close) buttons.
 - Fully responsive: stays open on desktop, hides on mobile.
-- Separation of Concerns in JavaScript (modular functions).
 
 ## Built With
 - HTML5
